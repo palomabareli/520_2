@@ -31,6 +31,10 @@ with open(archiveName, 'a') as archive:
 #Type 4
 listName = ['aline', 'firmino']
 with open(archiveName, 'a') as archive:
-    #archive.writelines(listName)
     for name in listName:
         archive.write('\n'+name)
+    '''        
+    # or 
+    for '\n'+name in listName:
+        pass
+    '''
